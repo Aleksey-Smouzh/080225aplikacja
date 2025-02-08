@@ -1,15 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Zadania domowe</title>
+    <script src="js.js" defer></script>
 </head>
+
 <body>
-    
+    <header>
+        <h1>Zadania domowe</h1>
+    </header>
+  
+    <main>
+  
+        <form id="zadanieform">
+            <label for="text">
+                <input type="text" id="textForm" placeholder="Treść zadania">
+            </label>
+            <label for="date">
+                <input type="date" id="dataForm">
+            </label>
+            <button type="submit">Dodaj</button>
+        </form>
+  
+        <div>
+            <label>
+                data
+                <input type="date" id="datafilter" placeholder="data">
+            </label>
+            <button type="button" id="filtruj">filtruj</button>
+            <button type="button" id="resetFiltrow">resetFiltrow</button>
+        </div>
+  
+        <table>
+            <thead>
+                <tr>
+                    <th>lp</th>
+                    <th>data</th>
+                    <th>tresc</th>
+                    <th>akcja</th>
+                </tr>
+            </thead>
+            <tbody id="trescWynikow"></tbody>
+        </table>
+  
+    </main>
+  
+    <footer>
+        <p>wykonal: <span>xmz</span></p>
+    </footer>
+    <script src="js.js"></script>
+  </body>
+  
 
-<h1>blblbl</h1>
-
-
-</body>
 </html>

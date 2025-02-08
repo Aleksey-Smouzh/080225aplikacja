@@ -9,14 +9,14 @@ let dane = [];
 // Добавление задачи
 form.addEventListener("submit", (e) => {
     e.preventDefault();
-    
+
     const textForm = document.getElementById('textForm').value;
     const dataForm = document.getElementById('dataForm').value;
 
     // Добавляем новую задачу в массив
-    dane.push({ 
-        textForm: textForm, 
-        dataForm: dataForm 
+    dane.push({
+        textForm: textForm,
+        dataForm: dataForm
     });
 
     // Отображаем все задачи
@@ -34,11 +34,11 @@ function usunWiersz(index) {
 function pokaDane() {
     trescWynikow.innerHTML = "";
     let displayIndex = 1; // Порядковый номер для отображения (начинается с 1)
-    
+
     dane.forEach((zadanie, index) => {
         const wiersz = document.createElement("tr");
         wiersz.classList.add('row', 'row2');
-        
+
         wiersz.innerHTML = `
             <td>${displayIndex++}</td>
             <td>${zadanie.dataForm}</td>
@@ -47,7 +47,7 @@ function pokaDane() {
                 <button onclick="usunWiersz(${index})">Usuń</button>
             </td>
         `;
-        
+
         trescWynikow.appendChild(wiersz);
     });
 }

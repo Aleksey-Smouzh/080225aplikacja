@@ -6,15 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zadania domowe</title>
     <script src="js.js" defer></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <header>
         <h1>Zadania domowe</h1>
     </header>
-  
+
     <main>
-  
+
         <form id="zadanieform">
             <label for="text">
                 <input type="text" id="textForm" placeholder="Treść zadania">
@@ -24,35 +25,35 @@
             </label>
             <button type="submit">Dodaj</button>
         </form>
-  
+
         <div>
             <label>
-                data
+                Data
                 <input type="date" id="datafilter" placeholder="data">
             </label>
             <button type="button" id="filtruj">filtruj</button>
             <button type="button" id="resetFiltrow">resetFiltrow</button>
         </div>
-  
+
         <table>
             <thead>
                 <tr>
                     <th>lp</th>
-                    <th>data</th>
+                    <th><Data></Data>ata</th>
                     <th>tresc</th>
                     <th>akcja</th>
                 </tr>
             </thead>
             <tbody id="trescWynikow"></tbody>
         </table>
-  
+
     </main>
-  
+
     <footer>
         <p>wykonal: <span>xmz</span></p>
     </footer>
     <script src="js.js"></script>
-  </body>
-  
+</body>
+
 
 </html>
